@@ -1,7 +1,7 @@
 {
   "name": "Friend-Finder",
   "version": "1.0.0",
-  "description": "",
+  "description": "#Friend Finder - Node and Express Servers",
   "main": "apiRoutes.js",
   "dependencies": {
     "express": "^4.17.1",
