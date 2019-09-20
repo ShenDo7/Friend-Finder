@@ -2,6 +2,7 @@
 const express = require("express");
 const path = require("path");
 const bodyParser = require('body-parser');
+const PORT = process.env.PORT || 8080;
 
 // local files
 var friends = require ("./FriendFinder/app/data/friends")
@@ -17,7 +18,6 @@ app.use(bodyParser.text());
 require("./apiRoutes")(app)
 require("./htmlRoutes")(app)
 
-const PORT = process.env.PORT || 8080;
 
 module.exports = app;
 
