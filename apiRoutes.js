@@ -8,7 +8,7 @@ module.exports = function(app) {
     });
   });
 
-  app.post("/api/friends", userScore, function(req, res) {
+  app.post("/api/friends", userScores, function(req, res) {
     var match;
     var difference = 100;
     friends.forEach(friend => {
