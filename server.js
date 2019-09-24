@@ -7,9 +7,9 @@ const PORT = process.env.PORT || 8080;
 // local files
 var friends = require("./FriendFinder/app/public/friends");
 
-app.use(express.static("public"));
-
 const app = express();
+
+app.use(express.static("public"));
 
 // Express data handleing
 app.use(bodyParser.urlencoded({ extended: true }));
