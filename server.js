@@ -5,7 +5,9 @@ const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 8080;
 
 // local files
-var friends = require("./FriendFinder/app/data/friends");
+var friends = require("./FriendFinder/app/public/friends");
+
+app.use(express.static("public"));
 
 const app = express();
 

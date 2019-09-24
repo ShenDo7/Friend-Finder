@@ -1,4 +1,4 @@
-const friends = require("./FriendFinder/app/data/friends");
+const friends = require("./FriendFinder/app/public/friends");
 // const userScores = require("./survey.html");
 
 module.exports = function(app) {
